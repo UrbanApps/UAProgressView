@@ -1,4 +1,5 @@
-![UAAppReviewManager](https://github.com/UrbanApps/UAProgressView/blob/master/UAProgressView.gif?raw=true "Example")
+![UAProgressView](https://github.com/UrbanApps/UAProgressView/blob/master/Screens/UAProgressView.gif?raw=true "Example 1")
+![UAProgressView](https://github.com/UrbanApps/UAProgressView/blob/master/Screens/UAProgressView2.gif?raw=true "Example 2")
 
 UAProgressView is a simple and lightweight, yet powerful animated circular progress view.
 
@@ -155,6 +156,7 @@ For more information on how to use and setup UAProgressView, please see the exam
 1. More customization
 2. More control
 3. No additional unused classes
+4. Block based interface
 
 ## Bugs / Pull Requests
 Let us know if you see ways to improve UAProgressView or see something wrong with it. We are happy to pull in pull requests that have clean code, and have features that are useful for most people.
@@ -165,7 +167,7 @@ Let us know if you see ways to improve UAProgressView or see something wrong wit
 ## Open-Source Urban Apps Projects
 
 - [UAModalPanel](https://github.com/UrbanApps/UAModalPanel) - An animated modal panel alternative for iOS
-- [UAAppReviewManager](https://github.com/coneybeare/UAAppReviewManager) - An app review prompting tool for iOS and Mac App Store apps.
+- [UAAppReviewManager](https://github.com/UrbanApps/UAAppReviewManager) - An app review prompting tool for iOS and Mac App Store apps.
 - [UALogger](https://github.com/UrbanApps/UALogger) - A logging utility for Mac/iOS apps
 - [UAObfuscatedString](https:github.com/UrbanApps/UAObfuscatedString) - A simple NSString category to hide sensitive strings
 - [Urban](https://github.com/UrbanApps/Urban) - An Xcode color scheme that uses a soft dark background, with subtle blue, orange and yellow colors
