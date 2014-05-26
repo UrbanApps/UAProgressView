@@ -1,6 +1,6 @@
-![UAProgressView](https://github.com/UrbanApps/UAProgressView/blob/master/Screens/UAProgressView.gif?raw=true "Example 1")
-
 UAProgressView is a simple and lightweight, yet powerful animated circular progress view.
+
+![UAProgressView](https://github.com/UrbanApps/UAProgressView/blob/master/Screens/UAProgressView.gif?raw=true "Example 1")
 
 ## Installation
 
