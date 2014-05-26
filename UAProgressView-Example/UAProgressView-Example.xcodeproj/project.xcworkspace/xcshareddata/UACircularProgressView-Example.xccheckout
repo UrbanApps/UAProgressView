@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E0627F70-9680-41F0-A96F-FC96C9D755DF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UACircularProgressView-Example</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>111A3596-F44A-4A91-B717-41FD2C454338</key>
+		<string>ssh://github.com/UrbanApps/UACircularProgressView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UACircularProgressView-Example/UACircularProgressView-Example.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>111A3596-F44A-4A91-B717-41FD2C454338</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/UrbanApps/UACircularProgressView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>111A3596-F44A-4A91-B717-41FD2C454338</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>111A3596-F44A-4A91-B717-41FD2C454338</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UACircularProgressView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
