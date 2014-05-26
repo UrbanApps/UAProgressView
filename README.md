@@ -4,7 +4,7 @@ UAProgressView is a simple and lightweight, yet powerful animated circular progr
 
 ## Installation
 
-Installation is made simple with [Cocoapods](http://cocoapods.org/). If you want to do it the old fashioned way, just add `UAProgressView.h`, `UAProgressView.m` and the Localization folder into your project.
+Installation is made simple with [Cocoapods](http://cocoapods.org/). If you want to do it the old fashioned way, just add `UAProgressView.h` and `UAProgressView.m` into your project.
 
     pod 'UAProgressView'
 
@@ -170,7 +170,7 @@ Let us know if you see ways to improve UAProgressView or see something wrong wit
 - [UAModalPanel](https://github.com/UrbanApps/UAModalPanel) - An animated modal panel alternative for iOS
 - [UAAppReviewManager](https://github.com/UrbanApps/UAAppReviewManager) - An app review prompting tool for iOS and Mac App Store apps.
 - [UALogger](https://github.com/UrbanApps/UALogger) - A logging utility for Mac/iOS apps
-- [UAObfuscatedString](https:github.com/UrbanApps/UAObfuscatedString) - A simple NSString category to hide sensitive strings
+- [UAObfuscatedString](https://github.com/UrbanApps/UAObfuscatedString) - A simple NSString category to hide sensitive strings
 - [Urban](https://github.com/UrbanApps/Urban) - An Xcode color scheme that uses a soft dark background, with subtle blue, orange and yellow colors
 
 ## Feeling Generous?
