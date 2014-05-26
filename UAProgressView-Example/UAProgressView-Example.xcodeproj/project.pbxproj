@@ -13,11 +13,12 @@
 		E6230C4D193296D400669726 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6230C4C193296D400669726 /* UIKit.framework */; };
 		E6230C821933681600669726 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6230C811933681600669726 /* Images.xcassets */; };
 		E6230C871933682400669726 /* UAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6230C841933682400669726 /* UAAppDelegate.m */; };
-		E6230C881933682400669726 /* UAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6230C861933682400669726 /* UAViewController.m */; };
+		E6230C881933682400669726 /* UABasicExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6230C861933682400669726 /* UABasicExampleViewController.m */; };
 		E6230C8B1933683D00669726 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6230C891933683D00669726 /* InfoPlist.strings */; };
-		E6230C8E1933684700669726 /* UAProgressView-Example-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6230C8C1933684700669726 /* UAProgressView-Example-Info.plist */; };
 		E6230C901933685200669726 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6230C8F1933685200669726 /* main.m */; };
 		E6230C931933692500669726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6230C911933692500669726 /* Main.storyboard */; };
+		E6E248A719338352008ECC2B /* UAAdvancedExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E248A619338352008ECC2B /* UAAdvancedExampleViewController.m */; };
+		E6E248A9193388A9008ECC2B /* horn.caf in Resources */ = {isa = PBXBuildFile; fileRef = E6E248A8193388A9008ECC2B /* horn.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +32,16 @@
 		E6230C811933681600669726 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "UAProgressView-Example/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		E6230C831933682400669726 /* UAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAAppDelegate.h; path = "UAProgressView-Example/UAAppDelegate.h"; sourceTree = SOURCE_ROOT; };
 		E6230C841933682400669726 /* UAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAAppDelegate.m; path = "UAProgressView-Example/UAAppDelegate.m"; sourceTree = SOURCE_ROOT; };
-		E6230C851933682400669726 /* UAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAViewController.h; path = "UAProgressView-Example/UAViewController.h"; sourceTree = SOURCE_ROOT; };
-		E6230C861933682400669726 /* UAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAViewController.m; path = "UAProgressView-Example/UAViewController.m"; sourceTree = SOURCE_ROOT; };
+		E6230C851933682400669726 /* UABasicExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UABasicExampleViewController.h; path = "UAProgressView-Example/UABasicExampleViewController.h"; sourceTree = SOURCE_ROOT; };
+		E6230C861933682400669726 /* UABasicExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UABasicExampleViewController.m; path = "UAProgressView-Example/UABasicExampleViewController.m"; sourceTree = SOURCE_ROOT; };
 		E6230C8A1933683D00669726 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "UAProgressView-Example/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		E6230C8C1933684700669726 /* UAProgressView-Example-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "UAProgressView-Example-Info.plist"; path = "UAProgressView-Example/UAProgressView-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E6230C8D1933684700669726 /* UAProgressView-Example-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UAProgressView-Example-Prefix.pch"; path = "UAProgressView-Example/UAProgressView-Example-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		E6230C8F1933685200669726 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "UAProgressView-Example/main.m"; sourceTree = SOURCE_ROOT; };
 		E6230C921933692500669726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "UAProgressView-Example/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		E6E248A519338352008ECC2B /* UAAdvancedExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAAdvancedExampleViewController.h; path = "UAProgressView-Example/UAAdvancedExampleViewController.h"; sourceTree = SOURCE_ROOT; };
+		E6E248A619338352008ECC2B /* UAAdvancedExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAAdvancedExampleViewController.m; path = "UAProgressView-Example/UAAdvancedExampleViewController.m"; sourceTree = SOURCE_ROOT; };
+		E6E248A8193388A9008ECC2B /* horn.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = horn.caf; path = "UAProgressView-Example/horn.caf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +94,13 @@
 			children = (
 				E6230C831933682400669726 /* UAAppDelegate.h */,
 				E6230C841933682400669726 /* UAAppDelegate.m */,
-				E6230C851933682400669726 /* UAViewController.h */,
-				E6230C861933682400669726 /* UAViewController.m */,
+				E6230C851933682400669726 /* UABasicExampleViewController.h */,
+				E6230C861933682400669726 /* UABasicExampleViewController.m */,
+				E6E248A519338352008ECC2B /* UAAdvancedExampleViewController.h */,
+				E6E248A619338352008ECC2B /* UAAdvancedExampleViewController.m */,
 				E6230C811933681600669726 /* Images.xcassets */,
 				E6230C911933692500669726 /* Main.storyboard */,
+				E6E248A8193388A9008ECC2B /* horn.caf */,
 				E6230C4F193296D400669726 /* Supporting Files */,
 			);
 			name = "UAProgressView-Example";
@@ -168,8 +175,8 @@
 			files = (
 				E6230C821933681600669726 /* Images.xcassets in Resources */,
 				E6230C8B1933683D00669726 /* InfoPlist.strings in Resources */,
-				E6230C8E1933684700669726 /* UAProgressView-Example-Info.plist in Resources */,
 				E6230C931933692500669726 /* Main.storyboard in Resources */,
+				E6E248A9193388A9008ECC2B /* horn.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6230C901933685200669726 /* main.m in Sources */,
-				E6230C881933682400669726 /* UAViewController.m in Sources */,
+				E6E248A719338352008ECC2B /* UAAdvancedExampleViewController.m in Sources */,
+				E6230C881933682400669726 /* UABasicExampleViewController.m in Sources */,
 				E6230C871933682400669726 /* UAAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

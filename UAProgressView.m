@@ -330,7 +330,7 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
     CGFloat width = self.frame.size.width;
 	CGFloat borderWidth = self.shapeLayer.borderWidth;
     return [UIBezierPath bezierPathWithArcCenter:CGPointMake(width/2.0f, width/2.0f)
-                                          radius:width/2.0f - borderWidth
+                                          radius:width/2.0f - borderWidth - 0.5
                                       startAngle:startAngle
                                         endAngle:endAngle
                                        clockwise:YES];

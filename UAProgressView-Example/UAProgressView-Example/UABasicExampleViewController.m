@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Urban Apps. All rights reserved.
 //
 
-#import "UAViewController.h"
+#import "UABasicExampleViewController.h"
 
 #import <UAProgressView/UAProgressView.h>
 
-@interface UAViewController ()
+@interface UABasicExampleViewController ()
 
 @property (nonatomic, weak) IBOutlet UAProgressView *progressView1;
 @property (nonatomic, weak) IBOutlet UAProgressView *progressView2;
@@ -20,13 +20,14 @@
 @property (nonatomic, weak) IBOutlet UAProgressView *progressView6;
 
 @property (nonatomic, assign) float localProgress;
+
 @end
 
-@implementation UAViewController
+@implementation UABasicExampleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
+		
 	[self setupProgressView1];
 	[self setupProgressView2];
 	[self setupProgressView3];

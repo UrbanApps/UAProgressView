@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UAViewController : UIViewController
+@interface UABasicExampleViewController : UIViewController
 
 @end

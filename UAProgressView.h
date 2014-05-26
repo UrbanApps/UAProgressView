@@ -15,21 +15,21 @@
  *
  *  Example usage would be to invert the colors on your centralView
  */
-@property (nonatomic, copy) void (^fillChangedBlock)(UAProgressView *, BOOL filled, BOOL animated);
+@property (nonatomic, copy) void (^fillChangedBlock)(UAProgressView *progressView, BOOL filled, BOOL animated);
 
 /**
  *  Called on touchUpInside
  *
  *  Example usage would be to invert the colors on your centralView
  */
-@property (nonatomic, copy) void (^didSelectBlock)(UAProgressView *);
+@property (nonatomic, copy) void (^didSelectBlock)(UAProgressView *progressView);
 
 /**
  *  Called on setProgress
  *
  *  Example usage would be to update any central view labels
  */
-@property (nonatomic, copy) void (^progressChangedBlock)(UAProgressView *, float progress);
+@property (nonatomic, copy) void (^progressChangedBlock)(UAProgressView *progressView, float progress);
 
 /**
  *  The view in the center of the progress view.
