@@ -61,8 +61,10 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 	self.centralView = nil;
 	
 	_fillOnTouch = YES;
-	_progress = 0.0;
 	_animationDuration = 0.3f;
+	
+	_progress = 0;
+	[_progressView updateProgress:_progress];
 	
 	self.borderWidth = 1.0f;
 	self.lineWidth = 2.0f;
@@ -215,7 +217,7 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 
 - (void)removeFillAnimated:(BOOL)animated {
 	if (self.fillOnTouch) {
-	
+		
 		// add the fade-out animation
 		if (animated) {
 			CABasicAnimation *highlightAnimation = [CABasicAnimation animationWithKeyPath:@"backgroundColor"];
@@ -266,7 +268,7 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 		[self addFill];
 		
 	} else if (UIGestureRecognizerStateChanged == gestureRecognizer.state) {	// press was recognized, but then moved
-	
+		
 		if (CGRectContainsPoint(self.bounds, touch)) {
 			
 			[self addFill];
@@ -280,7 +282,7 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
     } else if (UIGestureRecognizerStateEnded == gestureRecognizer.state) { // the touch has been picked up
 		
 		if (CGRectContainsPoint(self.bounds, touch)) {
-		
+			
 			[self removeFill];
 			
 			if (self.didSelectBlock) {
