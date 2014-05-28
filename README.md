@@ -179,5 +179,5 @@ If you want to thank us for open-sourcing UAProgressView, you can [buy one of ou
 
 <a href='http://www.pledgie.com/campaigns/21926'><img alt='Click here to lend your support to: Support UAProgressView Development and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/21926.png?skin_name=chrome' border='0' /></a>
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/coneybeare/uaprogressVvew/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/coneybeare/uaprogressview/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
