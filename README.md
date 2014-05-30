@@ -52,13 +52,14 @@ There is no central view setup by default.
     
 Example usage:
  
-	UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60.0, 32.0)];
-	textLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:32];
-	textLabel.textAlignment = NSTextAlignmentCenter;
-	textLabel.textColor = self.progressView.tintColor;
-	textLabel.backgroundColor = [UIColor clearColor];
-	self.progressView.centralView = textLabel;
-
+```objc
+UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60.0, 32.0)];
+textLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:32];
+textLabel.textAlignment = NSTextAlignmentCenter;
+textLabel.textColor = self.progressView.tintColor;
+textLabel.backgroundColor = [UIColor clearColor];
+self.progressView.centralView = textLabel;
+```
 
 ##### Border Width
 
