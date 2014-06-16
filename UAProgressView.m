@@ -61,10 +61,8 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 	self.centralView = nil;
 	
 	_fillOnTouch = YES;
+	_progress = 0.0;
 	_animationDuration = 0.3f;
-	
-	_progress = 0;
-	[_progressView updateProgress:_progress];
 	
 	self.borderWidth = 1.0f;
 	self.lineWidth = 2.0f;
@@ -315,6 +313,14 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 
 - (CAShapeLayer *)shapeLayer {
     return (CAShapeLayer *)self.layer;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+		[self updateProgress:0];
+    }
+	
+    return self;
 }
 
 - (void)layoutSubviews {
