@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "UAProgressView"
-  s.version               = "0.1.0"
+  s.version               = "0.1.1"
   s.summary               = "UAProgressView is a simple and lightweight, yet powerful animated circular progress view."
   s.homepage              = "https://github.com/UrbanApps/UAProgressView"
   s.author                = { "Matt Coneybeare" => "coneybeare@urbanapps.com" }
