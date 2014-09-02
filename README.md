@@ -16,7 +16,7 @@ Then, simply place this line in any file that uses UAProgressView.
 #import <UAProgressView.h>
 ```
 
-UAProgressView works on iOS 7 and up.
+UAProgressView works on iOS 6.0 and up.
    
 ## Usage
 
