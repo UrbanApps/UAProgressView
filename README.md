@@ -1,6 +1,6 @@
 UAProgressView is a simple and lightweight, yet powerful animated circular progress view.
 
-![UAProgressView](https://github.com/UrbanApps/UAProgressView/blob/master/Screens/UAProgressView.gif?raw=true "Example 1")
+![UAProgressView](https://raw.githubusercontent.com/UrbanApps/UAProgressView/assets/UAProgressView.gif "Example 1")
 
 ## Installation
 
@@ -179,7 +179,7 @@ self.progressView.fillChangedBlock = ^(UAProgressView *progressView, BOOL filled
 
 ### Configuration/Usage Examples
 
-![UAProgressView](https://github.com/UrbanApps/UAProgressView/blob/master/Screens/UAProgressView2.gif?raw=true "Example 2")
+![UAProgressView](https://raw.githubusercontent.com/UrbanApps/UAProgressView/assets/UAProgressView2.gif "Example 2")
 
 For more information on how to use and setup UAProgressView, please see the example project.
 
@@ -212,6 +212,4 @@ Let us know if you see ways to improve UAProgressView or see something wrong wit
 If you want to thank us for open-sourcing UAProgressView, you can [buy one of our apps](http://itunes.com/apps/urbanapps?at=11l7j9&ct=github) or even donate something small.
 
 <a href='http://www.pledgie.com/campaigns/21926'><img alt='Click here to lend your support to: Support UAProgressView Development and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/21926.png?skin_name=chrome' border='0' /></a>
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/coneybeare/uaprogressview/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
