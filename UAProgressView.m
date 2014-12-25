@@ -12,7 +12,7 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 
 @interface UACircularProgressView : UIView
 
-- (void)updateProgress:(float)progress;
+- (void)updateProgress:(CGFloat)progress;
 - (CAShapeLayer *)shapeLayer;
 
 @end
@@ -141,7 +141,7 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 
 #pragma mark - Progress Control
 
-- (void)setProgress:(float)progress animated:(BOOL)animated {
+- (void)setProgress:(CGFloat)progress animated:(BOOL)animated {
     
 	progress = MAX( MIN(progress, 1.0), 0.0); // keep it between 0 and 1
 	
@@ -166,7 +166,7 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 	}
 }
 
-- (void)setProgress:(float)progress {
+- (void)setProgress:(CGFloat)progress {
 	[self setProgress:progress animated:NO];
 }
 
@@ -177,7 +177,7 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
     _animationDuration = animationDuration;
 }
 
-- (void)animateToProgress:(float)progress {
+- (void)animateToProgress:(CGFloat)progress {
     [self stopAnimation];
     
     // Add shape animation
@@ -363,11 +363,11 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
                                        clockwise:YES];
 }
 
-- (void)updateProgress:(float)progress {
+- (void)updateProgress:(CGFloat)progress {
     [self updatePath:progress];
 }
 
-- (void)updatePath:(float)progress {
+- (void)updatePath:(CGFloat)progress {
 	[CATransaction begin];
 	[CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
 	self.shapeLayer.strokeEnd = progress;
