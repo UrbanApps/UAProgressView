@@ -18,7 +18,7 @@
 
 @property (nonatomic, assign) SystemSoundID horn;
 @property (nonatomic, assign) BOOL paused;
-@property (nonatomic, assign) float localProgress;
+@property (nonatomic, assign) CGFloat localProgress;
 
 @end
 
@@ -53,7 +53,7 @@
 		}
 	};
 	
-	self.progressView.progressChangedBlock = ^(UAProgressView *progressView, float progress){
+	self.progressView.progressChangedBlock = ^(UAProgressView *progressView, CGFloat progress){
 		[(UILabel *)progressView.centralView setText:[NSString stringWithFormat:@"%2.0f%%", progress * 100]];
 	};
 	

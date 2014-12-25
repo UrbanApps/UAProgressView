@@ -29,7 +29,7 @@
  *
  *  Example usage would be to update any central view labels
  */
-@property (nonatomic, copy) void (^progressChangedBlock)(UAProgressView *progressView, float progress);
+@property (nonatomic, copy) void (^progressChangedBlock)(UAProgressView *progressView, CGFloat progress);
 
 /**
  *  The view in the center of the progress view.
@@ -76,7 +76,7 @@
 /**
  *  Gets/sets the progress, from 0.0 to 1.0. Progress < 0 is set to 0.0, progress > 1 is set to 1.0
  */
-@property (nonatomic, assign) float progress;
+@property (nonatomic, assign) CGFloat progress;
 
 /**
  *  The duration over which to animate the progress set. Default is 0.3 seconds. animationDuration < 0 is ignored
@@ -92,6 +92,6 @@
  *  @param progress The new progress value.
  *  @param animated Specify YES to animate the change or NO if you do not want the change to be animated.
  */
-- (void)setProgress:(float)progress animated:(BOOL)animated;
+- (void)setProgress:(CGFloat)progress animated:(BOOL)animated;
 
 @end

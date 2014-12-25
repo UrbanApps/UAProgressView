@@ -19,7 +19,7 @@
 @property (nonatomic, weak) IBOutlet UAProgressView *progressView5;
 @property (nonatomic, weak) IBOutlet UAProgressView *progressView6;
 
-@property (nonatomic, assign) float localProgress;
+@property (nonatomic, assign) CGFloat localProgress;
 
 @end
 
@@ -55,7 +55,7 @@
 	label.userInteractionEnabled = NO; // Allows tap to pass through to the progress view.
 	self.progressView3.centralView = label;
 	
-	self.progressView3.progressChangedBlock = ^(UAProgressView *progressView, float progress) {
+	self.progressView3.progressChangedBlock = ^(UAProgressView *progressView, CGFloat progress) {
 		[(UILabel *)progressView.centralView setText:[NSString stringWithFormat:@"%2.0f%%", progress * 100]];
 	};
 }

@@ -27,7 +27,7 @@ UAProgressView has sensible defaults to make setup a breeze.
 1. Add a custom view to your storyboard, xib or create a UAProgressView in code.
 2. Set the progress on your UAProgressView by calling `setProgress:`
 
-The progress should be a `float` between 0 and 1, but we will round to the closest if over/under.
+The progress should be a `CGFloat` between 0 and 1, but we will round to the closest if over/under.
 
 The default color used for UAProgressView is the view's `tintColor`, and it will travel up the superview tree as expected to set it.
 
@@ -142,13 +142,13 @@ self.progressView.didSelectBlock = ^(UAProgressView *progressView){
 You can set a block to be called whenever the progress is changed. This can be useful if the object updating the progress does not know about the central view.
 
 ```objc
-@property (nonatomic, copy) void (^progressChangedBlock)(UAProgressView *progressView, float progress);
+@property (nonatomic, copy) void (^progressChangedBlock)(UAProgressView *progressView, CGFloat progress);
 ```
 
 Example usage:
 
 ```objc
-self.progressView.progressChangedBlock = ^(UAProgressView *progressView, float progress){
+self.progressView.progressChangedBlock = ^(UAProgressView *progressView, CGFloat progress){
     [(UILabel *)progressView.centralView setText:[NSString stringWithFormat:@"%2.0f%%", progress * 100]];
 };
 ```
