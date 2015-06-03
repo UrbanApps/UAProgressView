@@ -182,6 +182,8 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
     
     // Add shape animation
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
     animation.duration = self.animationDuration;
     animation.fromValue = @(self.progress);
     animation.toValue = @(progress);
