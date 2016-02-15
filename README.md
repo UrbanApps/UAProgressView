@@ -4,7 +4,7 @@ UAProgressView is a simple and lightweight, yet powerful animated circular progr
 
 ## Installation
 
-Installation is made simple with [Cocoapods](http://cocoapods.org/). If you want to do it the old fashioned way, just add `UAProgressView.h` and `UAProgressView.m` into your project.
+Installation is made simple with [CocoaPods](http://cocoapods.org/). If you want to do it the old fashioned way, just add `UAProgressView.h` and `UAProgressView.m` into your project.
 
 ```ruby
 pod 'UAProgressView'
