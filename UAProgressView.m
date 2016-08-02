@@ -27,6 +27,7 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 
 @implementation UAProgressView
 @synthesize tintColor = _tintColor;
+@synthesize outerTintColor = _outerTintColor;
 
 #pragma mark - Init
 
@@ -109,9 +110,10 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
     }
 	
     UIColor *tintColor = self.tintColor;
-	
+    UIColor *outerTintColor = self.outerTintColor;
+
     self.progressView.shapeLayer.strokeColor = tintColor.CGColor;
-    self.progressView.shapeLayer.borderColor = tintColor.CGColor;
+    self.progressView.shapeLayer.borderColor = outerTintColor.CGColor;
 }
 
 - (UIColor*) tintColor
@@ -127,6 +129,22 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
     [self willChangeValueForKey: @"tintColor"];
     _tintColor = tintColor;
     [self didChangeValueForKey: @"tintColor"];
+    [self tintColorDidChange];
+}
+
+- (UIColor*) outerTintColor
+{
+    if (_outerTintColor == nil) {
+        _outerTintColor = [UIColor redColor];
+    }
+    return _outerTintColor;
+}
+
+- (void) setOuterTintColor:(UIColor *)outerTintColor
+{
+    [self willChangeValueForKey: @"outerTintColor"];
+    _outerTintColor = outerTintColor;
+    [self didChangeValueForKey: @"outerTintColor"];
     [self tintColorDidChange];
 }
 
