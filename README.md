@@ -40,7 +40,7 @@ There are many different configuration options to setup UAProgressView the way y
 
 ##### Center View
 
-Rather than force a stop button, label or some other canned central view, you can set the center view to be anything you want. In the example above, the `centralView` is set to a custom `UILabel`.
+Rather than force a stop button, label or some other canned central view, you can set the center view to be anything you want. In the example below, the `centralView` is set to a custom `UILabel`.
 
 The `centralView` will be centered in the view but not resized, so plan accordingly when setting it up. It sits above the progress view in the layer hierarchy so it receives first tap.
 
