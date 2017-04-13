@@ -67,11 +67,18 @@
 @property (nonatomic, assign) CGFloat lineWidth UI_APPEARANCE_SELECTOR;
 
 /**
- * The color of the stroke and border
+ * The color of the stroke
  *
  * Defaults to #007aff
  */
 @property (nonatomic, strong) UIColor *tintColor;
+
+/**
+ * The color of the border
+ *
+ * Defaults to #007aff
+ */
+@property (nonatomic, strong) UIColor *outerTintColor;
 
 /**
  *  Gets/sets the progress, from 0.0 to 1.0. Progress < 0 is set to 0.0, progress > 1 is set to 1.0
