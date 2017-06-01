@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UAProgressView : UIView
+@interface UAProgressView : UIView <CAAnimationDelegate>
 
 /**
  *  Called when the progress view is filled with tintColor, or removed
