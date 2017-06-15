@@ -130,6 +130,14 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
     [self tintColorDidChange];
 }
 
+- (UIColor*) fillColor
+{
+    if (_fillColor == nil) {
+        return _tintColor;
+    }
+    return _fillColor;
+}
+
 #pragma mark - Layout
 
 - (void)layoutSubviews {
@@ -225,7 +233,7 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 - (void)addFill {
 	if (self.fillOnTouch) {
 		// update the layer model
-		self.progressView.layer.backgroundColor = [self tintColor].CGColor;
+		self.progressView.layer.backgroundColor = [self fillColor].CGColor;
 		
 		// call block
 		if (self.fillChangedBlock) {

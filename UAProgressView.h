@@ -74,6 +74,13 @@
 @property (nonatomic, strong) UIColor *tintColor;
 
 /**
+ * The color of the fill contents
+ *
+ * Defaults to same tintColor
+ */
+@property (nonatomic, strong) UIColor *fillColor;
+
+/**
  *  Gets/sets the progress, from 0.0 to 1.0. Progress < 0 is set to 0.0, progress > 1 is set to 1.0
  */
 @property (nonatomic, assign) CGFloat progress;
@@ -93,5 +100,10 @@
  *  @param animated Specify YES to animate the change or NO if you do not want the change to be animated.
  */
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated;
+
+/**
+ *  Fill contents.
+ */
+- (void)addFill;
 
 @end
