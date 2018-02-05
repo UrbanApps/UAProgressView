@@ -115,7 +115,7 @@
 @property (nonatomic, assign) CGFloat longPressDuration;
 
 /**
- * Cancels the selection when the long press gesture is reached.
+ * Cancels the selection when the long press duration is reached.
  *
  * Default is NO.
  */
