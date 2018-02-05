@@ -34,6 +34,8 @@
 	self.progressView.borderWidth = 2.0;
 	self.progressView.lineWidth = 2.0;
 	self.progressView.fillOnTouch = YES;
+    self.progressView.longPressDuration = 1.0;
+    self.progressView.longPressCancelsSelect = YES;
 	
 	UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60.0, 32.0)];
 	textLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:32];
@@ -65,6 +67,11 @@
 		AudioServicesPlaySystemSound(_horn);
 		_paused = !_paused;
 	};
+    
+    self.progressView.didLongPressBlock = ^(UAProgressView *progressView) {
+        _paused = YES;
+        _localProgress = progressView.progress = 0.0;
+    };
 	
 	self.progressView.progress = 0;
 	

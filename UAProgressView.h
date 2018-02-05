@@ -106,4 +106,26 @@
  */
 - (void)addFill;
 
+/**
+ *  Specify an optional long press duration that will fire the didLongPressBlock when reached.
+ *  Must be > 0.0.
+ *
+ *  Default is 0.0 (disabled).
+ */
+@property (nonatomic, assign) CGFloat longPressDuration;
+
+/**
+ * Cancels the selection when the long press gesture is reached.
+ *
+ * Default is NO.
+ */
+@property (nonatomic, assign) BOOL longPressCancelsSelect;
+
+/**
+ *  Called on when the longPressDuration has been reached.
+ *
+ *  Example usage would be to reset the progress.
+ */
+@property (nonatomic, copy) void (^didLongPressBlock)(UAProgressView *progressView);
+
 @end

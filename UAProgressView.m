@@ -22,6 +22,8 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 @property (nonatomic, strong) UACircularProgressView *progressView;
 @property (nonatomic, assign) int valueLabelProgressPercentDifference;
 @property (nonatomic, strong) NSTimer *valueLabelUpdateTimer;
+@property (nonatomic, strong) NSTimer *longPressTimer;
+@property (nonatomic, strong) UILongPressGestureRecognizer *gestureRecognizer;
 
 @end
 
@@ -64,6 +66,8 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 	_fillOnTouch = YES;
 	_progress = 0.0;
 	_animationDuration = 0.3f;
+    _longPressDuration = 0.0f;
+    _longPressCancelsSelect = NO;
 	
 	self.borderWidth = 1.0f;
 	self.lineWidth = 2.0f;
@@ -74,10 +78,11 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 }
 
 - (void)setupGestureRecognizer {
-	UILongPressGestureRecognizer *gestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(touchDetected:)];
-	gestureRecognizer.delegate = self;
-	gestureRecognizer.minimumPressDuration = 0.0;
-	[self addGestureRecognizer:gestureRecognizer];
+    // while this is a long press gesture, it is actually recognizing any presses < longPressDuration
+	_gestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(touchDetected:)];
+	_gestureRecognizer.delegate = self;
+	_gestureRecognizer.minimumPressDuration = 0.0;
+	[self addGestureRecognizer:_gestureRecognizer];
 }
 
 #pragma mark - Public Accessors
@@ -287,23 +292,30 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 }
 
 - (void)touchDetected:(UILongPressGestureRecognizer *)gestureRecognizer {
-	
+
 	CGPoint touch = [gestureRecognizer locationOfTouch:0 inView:self];
 	
 	if (UIGestureRecognizerStateBegan == gestureRecognizer.state) {	// press is being held down
-		
+        
 		[self addFill];
+        
+        [self startLongPressTimer];
 		
 	} else if (UIGestureRecognizerStateChanged == gestureRecognizer.state) {	// press was recognized, but then moved
 		
 		if (CGRectContainsPoint(self.bounds, touch)) {
 			
 			[self addFill];
+            
+            if (self.longPressTimer == nil) {
+                [self startLongPressTimer];
+            }
 			
 		} else {
 			
 			[self removeFillAnimated:NO];
-			
+            
+            [self stopLongPressTimer];
 		}
 		
     } else if (UIGestureRecognizerStateEnded == gestureRecognizer.state) { // the touch has been picked up
@@ -321,13 +333,59 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 			[self removeFillAnimated:NO];
 			
 		}
+        
+        [self stopLongPressTimer];
 		
     } else {
 		
 		[self removeFillAnimated:NO];
+        
+        [self stopLongPressTimer];
 		
 	}
 	
+}
+
+- (void)stopLongPressTimer
+{
+    if (self.longPressTimer != nil) {
+        [self.longPressTimer invalidate];
+        self.longPressTimer = nil;
+    }
+}
+
+- (void)startLongPressTimer
+{
+    if (self.longPressDuration > 0.0) {
+        [self.longPressTimer invalidate];
+        self.longPressTimer = [NSTimer scheduledTimerWithTimeInterval:_longPressDuration
+                                                               target:self
+                                                             selector:@selector(longPressTimerFired:)
+                                                             userInfo:nil
+                                                              repeats:NO];
+    }
+}
+
+- (void)longPressTimerFired:(NSTimer *)timer {
+    if (_longPressCancelsSelect) {
+        _gestureRecognizer.enabled = NO;
+        _gestureRecognizer.enabled = YES;
+    }
+    
+    if (self.didLongPressBlock) {
+        self.didLongPressBlock(self);
+    }
+}
+
+- (void)setLongPressDuration:(CGFloat)longPressDuration
+{
+    longPressDuration = MAX(0.0, longPressDuration); // keep it above 0.0
+    
+    if (_longPressDuration == longPressDuration) {
+        return;
+    } else {
+        _longPressDuration = longPressDuration;
+    }
 }
 
 @end
