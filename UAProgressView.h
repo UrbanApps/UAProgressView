@@ -107,6 +107,12 @@
 - (void)addFill;
 
 /**
+ *  The long press gesture that is used to recognize single taps and long presses on the central
+ *  view.
+ */
+@property (nonatomic, strong) UILongPressGestureRecognizer *gestureRecognizer;
+
+/**
  *  Specify an optional long press duration that will fire the didLongPressBlock when reached.
  *  Must be > 0.0.
  *

@@ -23,7 +23,6 @@ NSString * const UAProgressViewProgressAnimationKey = @"UAProgressViewProgressAn
 @property (nonatomic, assign) int valueLabelProgressPercentDifference;
 @property (nonatomic, strong) NSTimer *valueLabelUpdateTimer;
 @property (nonatomic, strong) NSTimer *longPressTimer;
-@property (nonatomic, strong) UILongPressGestureRecognizer *gestureRecognizer;
 
 @end
 
