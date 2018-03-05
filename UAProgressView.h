@@ -106,4 +106,32 @@
  */
 - (void)addFill;
 
+/**
+ *  The long press gesture that is used to recognize single taps and long presses on the central
+ *  view.
+ */
+@property (nonatomic, strong) UILongPressGestureRecognizer *gestureRecognizer;
+
+/**
+ *  Specify an optional long press duration that will fire the didLongPressBlock when reached.
+ *  Must be > 0.0.
+ *
+ *  Default is 0.0 (disabled).
+ */
+@property (nonatomic, assign) CGFloat longPressDuration;
+
+/**
+ * Cancels the selection when the long press duration is reached.
+ *
+ * Default is NO.
+ */
+@property (nonatomic, assign) BOOL longPressCancelsSelect;
+
+/**
+ *  Called on when the longPressDuration has been reached.
+ *
+ *  Example usage would be to reset the progress.
+ */
+@property (nonatomic, copy) void (^didLongPressBlock)(UAProgressView *progressView);
+
 @end

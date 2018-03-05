@@ -116,6 +116,32 @@ The duration over which to animate the progress set. Default is 0.3 seconds. ani
 The `animationDuration` variable is only used when calling `setProgress:animated:` with `YES`.
 
 
+#### Long Press Gesture
+
+This is the gesture that is created on the progress view to handle selection and (optionally) the long press.  You can use this to customize the minimum duration required to invoke the selection gesture.
+
+```objc
+@property (nonatomic, strong) UILongPressGestureRecognizer *gestureRecognizer;
+```
+
+
+#### Long Press Duration
+
+Specify an optional long press duration that will fire the `didLongPressBlock` when reached.  Must be > 0.0.  Default is 0.0 (disabled).
+
+```objc
+@property (nonatomic, assign) CGFloat longPressDuration;
+```
+
+
+#### Long Press Cancelling Selection
+
+By default, the long press action will also trigger the selection action.  You can disable this functionality with this property.  Default is NO.
+
+```objc
+@property (nonatomic, assign) BOOL longPressCancelsSelect;
+```
+
 
 ### Event Blocks
 
@@ -136,6 +162,21 @@ self.progressView.didSelectBlock = ^(UAProgressView *progressView){
 };
 ```
 
+##### On Long Press
+
+You can set a block to be called when there was an optional long press on the progress view.  The long press is triggered when the `longPressDuration` is reached.
+
+```objc
+@property (nonatomic, copy) void (^didLongPressBlock)(UAProgressView *progressView);
+```
+
+Example usage:
+
+```objc
+self.progressView. didLongPressBlock = ^(UAProgressView *progressView){
+    // Do something after long pressing the progress view
+};
+```
 
 ##### On Progress Change
 
