@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97F6DD5ACE3C4CD9B8D29675 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A04A471157B4134A4EFE3DD /* libPods.a */; };
+		50104A51920B06C7769E9BDC /* libPods-UAProgressView-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB52C073FC211D893F67904 /* libPods-UAProgressView-Example.a */; };
 		E6230C49193296D400669726 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6230C48193296D400669726 /* Foundation.framework */; };
 		E6230C4B193296D400669726 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6230C4A193296D400669726 /* CoreGraphics.framework */; };
 		E6230C4D193296D400669726 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6230C4C193296D400669726 /* UIKit.framework */; };
@@ -22,8 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12C2C2C73D17407185AA8523 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		7A04A471157B4134A4EFE3DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8D5B1E194330F4CEF0F277 /* Pods-UAProgressView-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAProgressView-Example.release.xcconfig"; path = "Target Support Files/Pods-UAProgressView-Example/Pods-UAProgressView-Example.release.xcconfig"; sourceTree = "<group>"; };
+		6DB52C073FC211D893F67904 /* libPods-UAProgressView-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UAProgressView-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42D7C60E7084847F5F52A47 /* Pods-UAProgressView-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAProgressView-Example.debug.xcconfig"; path = "Target Support Files/Pods-UAProgressView-Example/Pods-UAProgressView-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E6230C45193296D400669726 /* UAProgressView-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UAProgressView-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6230C48193296D400669726 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E6230C4A193296D400669726 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +53,7 @@
 				E6230C4B193296D400669726 /* CoreGraphics.framework in Frameworks */,
 				E6230C4D193296D400669726 /* UIKit.framework in Frameworks */,
 				E6230C49193296D400669726 /* Foundation.framework in Frameworks */,
-				97F6DD5ACE3C4CD9B8D29675 /* libPods.a in Frameworks */,
+				50104A51920B06C7769E9BDC /* libPods-UAProgressView-Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +66,7 @@
 				E6230C4E193296D400669726 /* UAProgressView-Example */,
 				E6230C47193296D400669726 /* Frameworks */,
 				E6230C46193296D400669726 /* Products */,
-				12C2C2C73D17407185AA8523 /* Pods.xcconfig */,
+				F61AB00468E98A8677567EEC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +85,7 @@
 				E6230C4A193296D400669726 /* CoreGraphics.framework */,
 				E6230C4C193296D400669726 /* UIKit.framework */,
 				E6230C67193296D500669726 /* XCTest.framework */,
-				7A04A471157B4134A4EFE3DD /* libPods.a */,
+				6DB52C073FC211D893F67904 /* libPods-UAProgressView-Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +119,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F61AB00468E98A8677567EEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C42D7C60E7084847F5F52A47 /* Pods-UAProgressView-Example.debug.xcconfig */,
+				3D8D5B1E194330F4CEF0F277 /* Pods-UAProgressView-Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,11 +135,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6230C77193296D500669726 /* Build configuration list for PBXNativeTarget "UAProgressView-Example" */;
 			buildPhases = (
-				C243989CDACE45349F86910B /* Check Pods Manifest.lock */,
+				BB6711EE776E532520E4EA92 /* [CP] Check Pods Manifest.lock */,
 				E6230C41193296D400669726 /* Sources */,
 				E6230C42193296D400669726 /* Frameworks */,
 				E6230C43193296D400669726 /* Resources */,
-				A6468924BA8549A1B9F009AD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +164,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -183,34 +193,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A6468924BA8549A1B9F009AD /* Copy Pods Resources */ = {
+		BB6711EE776E532520E4EA92 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UAProgressView-Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C243989CDACE45349F86910B /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -321,14 +323,14 @@
 		};
 		E6230C78193296D500669726 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12C2C2C73D17407185AA8523 /* Pods.xcconfig */;
+			baseConfigurationReference = C42D7C60E7084847F5F52A47 /* Pods-UAProgressView-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UAProgressView-Example/UAProgressView-Example-Prefix.pch";
 				INFOPLIST_FILE = "UAProgressView-Example/UAProgressView-Example-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -336,14 +338,14 @@
 		};
 		E6230C79193296D500669726 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12C2C2C73D17407185AA8523 /* Pods.xcconfig */;
+			baseConfigurationReference = 3D8D5B1E194330F4CEF0F277 /* Pods-UAProgressView-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UAProgressView-Example/UAProgressView-Example-Prefix.pch";
 				INFOPLIST_FILE = "UAProgressView-Example/UAProgressView-Example-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

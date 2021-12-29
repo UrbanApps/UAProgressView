@@ -1,2 +1,5 @@
-platform :ios, '6.0'
-pod 'UAProgressView', :path => '..'
+platform :ios, '9.0'
+
+target 'UAProgressView-Example' do
+  pod 'UAProgressView', :path => '..'
+end

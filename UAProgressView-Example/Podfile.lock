@@ -1,14 +1,16 @@
 PODS:
-  - UAProgressView (0.1.1)
+  - UAProgressView (0.1.4)
 
 DEPENDENCIES:
   - UAProgressView (from `..`)
 
 EXTERNAL SOURCES:
   UAProgressView:
-    :path: ..
+    :path: ".."
 
 SPEC CHECKSUMS:
-  UAProgressView: 1e1c5e7b6c4327b3e44aef996f4010adb0743d98
+  UAProgressView: 6796f5aa05037fb2940521636163b9db40a6c534
 
-COCOAPODS: 0.33.1
+PODFILE CHECKSUM: b78654b8db0a5b8cf07fb5ea10dae1f06990a9da
+
+COCOAPODS: 1.11.2
